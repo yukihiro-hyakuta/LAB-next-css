@@ -1,0 +1,65 @@
+{
+	"name": "Ubuntu",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		        "ghcr.io/ghcr.io/devcontainers/features/common-utils:2":{
+            		"username": "vscode",
+            		"uid": "1000",
+            		"gid": "1000",
+            		"upgradePackages": "true"
+        	},
+		"ghcr.io/devcontainers/features/azure-cli:1": {
+			"installBicep": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"installOhMyZsh": true,
+			"upgradePackages": true,
+			"username": "vscode",
+			"userUid": "1000",
+			"userGid": "1000"
+		},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"moby": true,
+			"azureDnsAutoDetection": true,
+			"installDockerBuildx": true,
+			"version": "latest",
+			"dockerDashComposeVersion": "v2"
+		},
+		"ghcr.io/devcontainers/features/dotnet:1": {
+			"installUsingApt": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"installDirectlyFromGitHubRelease": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"nodeGypDependencies": true,
+			"version": "lts"
+		},
+		"ghcr.io/devcontainers-contrib/features/typescript:2": {
+			"version": "latest"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"killalau.vscode-liquid-snippets",
+				"Shopify.theme-check-vscode",
+				"ms-azuretools.vscode-bicep",
+				"ms-vscode.azurecli",
+				"foxundermoon.shell-format",
+				"MS-CEINTL.vscode-language-pack-ja",
+				"vscode-icons-team.vscode-icons",
+				"Shopify.polaris-for-vscode",
+     			"GraphQL.vscode-graphql-syntax",
+				"ms-dotnettools.csharp",
+				"GraphQL.vscode-graphql",
+				"bradlc.vscode-tailwindcss"
+			]
+		}
+	}
+}
