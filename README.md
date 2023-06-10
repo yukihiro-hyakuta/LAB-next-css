@@ -7,3 +7,4 @@ https://tailblocks.cc/
   
 shadcnフォルダにあるUIは上部メニュー固定。サイドバーは小さいと消える。  
 ハンバーガーメニューは実装する必要がある。  
+https://reffect.co.jp/html/tailwind-for-beginners-navigation-menu   
