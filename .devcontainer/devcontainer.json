@@ -58,7 +58,8 @@
      			"GraphQL.vscode-graphql-syntax",
 				"ms-dotnettools.csharp",
 				"GraphQL.vscode-graphql",
-				"bradlc.vscode-tailwindcss"
+				"bradlc.vscode-tailwindcss",
+				"esbenp.prettier-vscode"
 			]
 		}
 	}
